@@ -22,7 +22,7 @@
 #  ***switch*** (tortburchakning yuzasini aniqlash uchun ishlatilgan logika ***case 3***)
 ![alt text](image-4.png)
 
-***switch*** (***default:***)
+# ***switch*** (***default:***)
 
 ![alt text](image-5.png)
 
