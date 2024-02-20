@@ -1,18 +1,28 @@
-﻿string menu = @"Geometrik guru loyixasi
-Agar 1 raqamini kiritsangiz aylana yuzasini aniqlab beriladi
-Agar 2 raqamini kiritsangiz uchburchak yuzasini aniqlab beriladi
-Agar 3 raqamini kiritsangiz tortburchak yuzasini aniqlab beriladi";
+﻿
+
+
+
+ string menu = @"Geometrik guru loyixasi
+ Agar 1 raqamini kiritsangiz aylana yuzasini aniqlab beriladi
+ Agar 2 raqamini kiritsangiz uchburchak yuzasini aniqlab beriladi
+ Agar 3 raqamini kiritsangiz tortburchak yuzasini aniqlab beriladi";
+
+Console.WriteLine(menu);
+
+
 
 double S;
-Console.WriteLine(menu);
-string userInhut = Console.ReadLine();
+string userInput = Console.ReadLine();
 
-  switch(userInhut)
+
+
+
+  switch(userInput)
 {
     case "1":
     Console.WriteLine("Radius:  ");
-    userInhut = Console.ReadLine();
-    double radius = Convert.ToDouble(userInhut);
+    userInput = Console.ReadLine();
+    double radius = Convert.ToDouble(userInput);
     
     S = Math.PI * (radius * radius);
     Console.WriteLine("Aylana yuzasi " + S);
@@ -20,11 +30,11 @@ string userInhut = Console.ReadLine();
 
     case "2":
     Console.WriteLine("Uzunlikni kiriting:  ");
-    userInhut = Console.ReadLine();
-    double b = Convert.ToDouble(userInhut);
+    userInput = Console.ReadLine();
+    double b = Convert.ToDouble(userInput);
     Console.WriteLine("Balandlikni kriting:  ");
-    userInhut = Console.ReadLine();
-    double p = Convert.ToDouble(userInhut);
+    userInput = Console.ReadLine();
+    double p = Convert.ToDouble(userInput);
 
     S = 0.5 * b * p;
     Console.WriteLine("Uchburchakning yuzi "+S);
@@ -32,15 +42,17 @@ string userInhut = Console.ReadLine();
    
    case "3":
    Console.WriteLine("Uzunlikni kiriting:  ");
-   userInhut = Console.ReadLine();
-   double m = Convert.ToDouble(userInhut);
+   userInput = Console.ReadLine();
+   double m = Convert.ToDouble(userInput);
    Console.WriteLine("Balandlikni kiriting: ");
-   userInhut = Console.ReadLine();
-   double u = Convert.ToDouble(userInhut);
+   userInput = Console.ReadLine();
+   double u = Convert.ToDouble(userInput);
 
    S = m * u;
    Console.WriteLine("To`rtburchakning yuzi: " +S);
    break;
+
+   
      default:
    Console.WriteLine("Nono`g`ri raqam kiritdingiz:"); 
    break; 
